@@ -3,7 +3,7 @@ logcafe.js
 
 # About
 
-LogCafe.js is a logging framework to support browser application logging.
+LogCafe.js is a logging framework to support browser application logging. (amd-style and node.js support)
 
 # Usage (node.js)
 
