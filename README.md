@@ -60,7 +60,8 @@ log.info('logger succesfully got', 'test'); // output log
 * require.js
 * browser
 
-Build
+## Build
+
 dependence) `node.js`
 
 `$ npm install .`
