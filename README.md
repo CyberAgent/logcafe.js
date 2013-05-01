@@ -23,7 +23,7 @@ $ node
 
 > var log = logCafe.getLogger('logcafe'); // set Logger
 > log.info('logger succesfully got', 'test'); // output log
-[info][logcafe] logger succesfully got, test
+[info][logcafe] logger succesfully got, test (......:xx:yy)
 ```
 
 # Usage (browser)
@@ -42,7 +42,7 @@ var log = logCafe.getLogger('logcafe'); // set Logger
 
 log.info('logger succesfully got', 'test'); // output log
 
->> [info][logcafe] logger succesfully got, test
+>> [info][logcafe] logger succesfully got, test (......:xx:yy)
 ```
 
 ## Configure
@@ -67,6 +67,20 @@ dependence) `node.js`
 `$ npm install .`
 
 `$ make`
+
+## Test (browser)
+
+```
+$ open ./spec/all.html
+```
+
+## Test (node.js)
+
+```
+$ npm install . # deps install
+$ make test
+```
+
 
 # AUTHORS
 
