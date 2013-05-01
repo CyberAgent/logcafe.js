@@ -1,5 +1,9 @@
 Changelog
 
+*Wed May  1 2013 Kei FUNAGAYAMA <funagayama_kei@cyberagent.co.jp> - 0.6.5
+ - Add: deps node modules chai.
+*Wed May  1 2013 Kei FUNAGAYAMA <funagayama_kei@cyberagent.co.jp> - 0.6.4
+ - Add: browser test case
 *Tue Apr 30 2013 Kei FUNAGAYAMA <funagayama_kei@cyberagent.co.jp> - 0.6.3
  - document update
 *Tue Apr 30 2013 Kei FUNAGAYAMA <funagayama_kei@cyberagent.co.jp> - 0.6.2
