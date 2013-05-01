@@ -79,6 +79,17 @@ $ open ./spec/all.html
 ```
 $ npm install . # deps install
 $ make test
+
+info: checking node_modules.
+if [ ! -d ./node_modules ]; then npm install .; else exit 0; fi
+
+info: testing start.
+./node_modules/mocha/bin/mocha test/
+
+  [info][logcafe] logger succesfully got (/Users/fkei/repos/logcafe.js/test/test.logcafe.js:28:17)
+․
+
+  1 test complete (16 ms)
 ```
 
 
