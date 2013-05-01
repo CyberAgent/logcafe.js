@@ -24,7 +24,7 @@ describe('logging test', function() {
             };
             logCafe.setConfigure(conf);
             var log = logCafe.getLogger('logcafe');
-
+            debugger;
             log.info('logger succesfully got');
 
             done();

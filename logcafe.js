@@ -158,6 +158,8 @@
                         if (suffix.charAt(suffix.length - 1) !== ')') {
                             suffix = '(' + suffix + ')';
                         }
+                    } else {
+                        suffix = '(' + line.replace(/[ ]*at /, '') + ')';
                     }
                 }
             } else {
@@ -187,8 +189,8 @@
      * @class
      * @name LogCafe
      */
-    var LogCafe = function LogCafe() {
-        this.initialize(arguments);
+    var LogCafe = function LogCafe(config) {
+        this.initialize(config);
     };
     LogCafe.prototype = {
         /**
@@ -196,7 +198,8 @@
          * @memberof LogCafe
          * @instance
          */
-        initialize: function initialize() {
+        initialize: function initialize(config) {
+            this.config = config;
             this.loggers = {};
         },
 
