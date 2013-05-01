@@ -1,6 +1,6 @@
 {
     "name": "logcafe",
-    "version": "0.6.4",
+    "version": "0.6.5",
     "description": "LogCafe.js is a logging framework to support browser application logging. (amd-style and node.js support)",
     "keywords": ["logging", "browser"],
     "homepage": "https://github.com/CyberAgent/logcafe.js",
@@ -29,6 +29,7 @@
         "requirejs": ">=2.1.4",
         "ready.js": ">=2.0.1",
         "mocha": ">=1.0.1",
+        "chai": "*",
         "should": ">=0.6.1",
         "jshint": ">=0.7.0",
         "jsdoc": "git://github.com/jsdoc3/jsdoc.git"
