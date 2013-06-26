@@ -19,6 +19,11 @@ __min="${__script_dir}/logcafe.min.js"
 [ ! -f ${__hint} ] && echo "error: jshint command not found. please $ npm install ." && exit 1
 
 #
+# set version
+#
+./setver
+
+#
 # jshint
 #
 echo
@@ -36,7 +41,8 @@ ${__jsdoc} -c ${__script_dir}/.jsdoc3.json -d ${__script_dir}/docs -p -r -l ${__
 # TODO: skip
 #[ $? -ne 0 ] && echo "jsdoc2 running error." && exit 1
 
-VERSION=`cat ${__script_dir}/package.json | grep version | cut -c 17-21`
+#VERSION=`cat ${__script_dir}/package.json | grep version | cut -c 17-21`
+VERSION=`node -e 'console.log(require("./logcafe").VERSION)'`
 DESCRIPTION=`cat ./package.json | grep description | cut -c 21-69`
 
 echo

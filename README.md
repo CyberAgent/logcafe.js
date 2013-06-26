@@ -51,6 +51,7 @@ log.info('logger succesfully got', 'test'); // output log
 {
     level: 'DEBUG', // OFF|TRACE|DEBUG|INFO|WARN|ERROR
     separator: ', ' // Consolidation of argument, it is a separator.
+    excludes: [] // Exclude category forward match
 }
 ```
 

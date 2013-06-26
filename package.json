@@ -1,8 +1,11 @@
 {
     "name": "logcafe",
-    "version": "0.6.5",
+    "version": "0.6.6",
     "description": "LogCafe.js is a logging framework to support browser application logging. (amd-style and node.js support)",
-    "keywords": ["logging", "browser"],
+    "keywords": [
+        "logging",
+        "browser"
+    ],
     "homepage": "https://github.com/CyberAgent/logcafe.js",
     "bugs": {
         "email": "shibucafe@cyberagent.co.jp",
@@ -13,11 +16,13 @@
         "email": "kei.topaz@gmail.com",
         "url": "https://github.com/fkei"
     },
-    "contributors": [{
-        "name": "Kazuma Mishimagi",
-        "email": "lonely.two.mn@gmail.com",
-        "url": "https://github.com/maginemu"
-    }],
+    "contributors": [
+        {
+            "name": "Kazuma Mishimagi",
+            "email": "lonely.two.mn@gmail.com",
+            "url": "https://github.com/maginemu"
+        }
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/CyberAgent/logcafe.js.git"

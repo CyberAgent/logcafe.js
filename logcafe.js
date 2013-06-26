@@ -71,13 +71,33 @@
         },
 
         /**
+         * Exclude category forward match
+         * @memberOf Logger
+         * @instance
+         * @function
+         * @private
+         */
+        _exclude: function _exclude() {
+            if (this.config.excludes && 0 < this.config.excludes.length) {
+                for (var i = 0; i < this.config.excludes.length; i++) {
+                    var reg = new RegExp('^' + this.config.excludes[i]);
+                    if (this.category.match(reg)) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        },
+
+
+        /**
          * trace method
          * @memberOf Logger
          * @instance
          * @function
          */
         trace: function trace() {
-            console.debug(this.output('trace', arguments));
+            !this._exclude() && console.debug(this.output('trace', arguments));
         },
 
         /**
@@ -87,7 +107,7 @@
          * @function
          */
         debug: function debug() {
-            console.debug(this.output('debug', arguments));
+            !this._exclude() && console.debug(this.output('debug', arguments));
         },
 
         /**
@@ -97,7 +117,7 @@
          * @function
          */
         info : function info() {
-            console.info(this.output('info', arguments));
+            !this._exclude() && console.info(this.output('info', arguments));
         },
 
         /**
@@ -107,7 +127,7 @@
          * @function
          */
         warn : function warn() {
-            console.warn(this.output('warn', arguments));
+            !this._exclude() && console.warn(this.output('warn', arguments));
         },
 
         /**
@@ -117,7 +137,7 @@
          * @function
          */
         error: function error() {
-            console.error(this.output('error', arguments));
+            !this._exclude() && console.error(this.output('error', arguments));
         },
 
         /**
@@ -234,6 +254,13 @@
 
         }
     };
+
+        /**
+         * Version
+         * @memberof LogCafe
+         * @public
+         */
+    LogCafe.VERSION = '0.6.6';
 
     if (typeof define === 'function' && define.amd) {
         // requirejs
