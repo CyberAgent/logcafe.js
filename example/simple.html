@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="../logcafe.js"></script>
+  <script>
+
+   var logcafe = new LogCafe({
+     level: 'TRACE',
+     separator: ' ',
+     excludes: [
+       'a0',
+       'a1.b'
+     ]
+   });
+
+   var logger = logcafe.getLogger('example.simple');
+   logger.info("message......");
+
+  </script>
+</head>
+
+<body>
+</body>
+</html>
