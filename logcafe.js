@@ -181,15 +181,7 @@
                     } else {
                         suffix = '(' + line.replace(/[ ]*at /, '') + ')';
                     }
-                }
-            } else {
-                try {
-                    throw new Error();
-                } catch (e) {
-                    stack = e.stack;
-                }
-                lines = stack.split('\n');
-                if (lines[2]) {
+                } else if (lines[2]) {
                     line = lines[2];
                     idx = line.indexOf('@');
                     if (idx >= 0) {
@@ -199,6 +191,7 @@
 
                 }
             }
+
             return '[' + level + '][' + this.category + '] ' + args.join(this.separator) + ' ' + suffix;
         }
     };
