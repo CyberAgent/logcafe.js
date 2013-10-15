@@ -41,18 +41,19 @@
                 this.separator = this.config.separator || ' ';
             }
 
-            if (this.level === this.LEVELS.TRACE) {
-                // pass
-            } else if (this.level === this.LEVELS.DEBUG) {
-                this.trace = none;
-            } else if (this.level === this.LEVELS.INFO) {
-                this.trace = this.debug = none;
-            } else if (this.level === this.LEVELS.WARN) {
-                this.trace = this.debug = this.info = none;
-            } else if (this.level === this.LEVELS.ERROR) {
-                this.trace = this.debug = this.info = this.warn = none;
-            } else {
-                // pass
+            switch (this.level) {
+                case this.LEVELS.DEBUG:
+                    this.trace = none;
+                    break;
+                case this.LEVELS.INFO:
+                    this.trace = this.debug = none;
+                    break;
+                case this.LEVELS.WARN:
+                    this.trace = this.debug = this.info = none;
+                    break;
+                case this.LEVELS.ERROR:
+                    this.trace = this.debug = this.info = this.warn = none;
+                    break;
             }
         },
 
