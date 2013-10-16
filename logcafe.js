@@ -258,7 +258,7 @@
          * @memberof LogCafe
          * @public
          */
-    LogCafe.VERSION = '0.6.7';
+    LogCafe.VERSION = '0.6.8';
 
     if (typeof define === 'function' && define.amd) {
         // requirejs
