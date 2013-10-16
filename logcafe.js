@@ -41,18 +41,23 @@
                 this.separator = this.config.separator || ' ';
             }
 
-            if (this.level === this.LEVELS.TRACE) {
-                // pass
-            } else if (this.level === this.LEVELS.DEBUG) {
+            switch (this.level) {
+            case this.LEVELS.DEBUG:
                 this.trace = none;
-            } else if (this.level === this.LEVELS.INFO) {
+                break;
+            case this.LEVELS.INFO:
                 this.trace = this.debug = none;
-            } else if (this.level === this.LEVELS.WARN) {
+                break;
+            case this.LEVELS.WARN:
                 this.trace = this.debug = this.info = none;
-            } else if (this.level === this.LEVELS.ERROR) {
+                break;
+            case this.LEVELS.ERROR:
                 this.trace = this.debug = this.info = this.warn = none;
-            } else {
-                // pass
+                break;
+            case this.LEVELS.TRACE:
+                break; // pass
+            default:
+                break; // pass
             }
         },
 
@@ -254,7 +259,7 @@
          * @memberof LogCafe
          * @public
          */
-    LogCafe.VERSION = '0.6.7';
+    LogCafe.VERSION = '0.6.8';
 
     if (typeof define === 'function' && define.amd) {
         // requirejs

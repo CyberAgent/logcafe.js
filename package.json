@@ -1,6 +1,6 @@
 {
     "name": "logcafe",
-    "version": "0.6.7",
+    "version": "0.6.8",
     "description": "LogCafe.js is a logging framework to support browser application logging. (amd-style and node.js support)",
     "keywords": [
         "logging",
