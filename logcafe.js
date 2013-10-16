@@ -42,18 +42,22 @@
             }
 
             switch (this.level) {
-                case this.LEVELS.DEBUG:
-                    this.trace = none;
-                    break;
-                case this.LEVELS.INFO:
-                    this.trace = this.debug = none;
-                    break;
-                case this.LEVELS.WARN:
-                    this.trace = this.debug = this.info = none;
-                    break;
-                case this.LEVELS.ERROR:
-                    this.trace = this.debug = this.info = this.warn = none;
-                    break;
+            case this.LEVELS.DEBUG:
+                this.trace = none;
+                break;
+            case this.LEVELS.INFO:
+                this.trace = this.debug = none;
+                break;
+            case this.LEVELS.WARN:
+                this.trace = this.debug = this.info = none;
+                break;
+            case this.LEVELS.ERROR:
+                this.trace = this.debug = this.info = this.warn = none;
+                break;
+            case this.LEVELS.TRACE:
+                break; // pass
+            default:
+                break; // pass
             }
         },
 
