@@ -76,6 +76,7 @@
          * @instance
          * @function
          * @private
+         * @return {Boolean}
          */
         _exclude: function _exclude() {
             if (this.config.excludes && 0 < this.config.excludes.length) {
