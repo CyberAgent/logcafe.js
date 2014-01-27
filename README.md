@@ -124,3 +124,7 @@ CyberAgent, Inc. All rights reserved.
 # License
 
 MIT @see https://github.com/CyberAgent/logcafe.js/blob/master/LICENSE
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/CyberAgent/logcafe.js/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
