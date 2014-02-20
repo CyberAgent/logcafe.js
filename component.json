@@ -1,0 +1,21 @@
+{
+  "name": "logcafe.js",
+  "repo": "CyberAgent/logcafe.js",
+  "description": "LogCafe.js is a logging framework to support browser application logging. (amd-style and node.js support)",
+  "version": "0.6.8",
+  "keywords": [
+    "logging",
+    "browser"
+  ],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": [
+    "logcafe.js",
+    "logcafe.min.js"
+  ],
+  "scripts": [
+    "logcafe.js",
+    "logcafe.min.js"
+  ]
+}
