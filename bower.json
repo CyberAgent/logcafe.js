@@ -1,0 +1,41 @@
+{
+  "name": "logcafe.js",
+  "version": "0.6.8",
+  "keywords": [
+    "logging",
+    "browser"
+  ],
+  "readmeFilename": "README.md",
+  "main": [
+    "logcafe.js",
+    "logcafe.min.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "Changelog",
+    "LICENSE",
+    "Makefile",
+    "README.md",
+    "bower.json",
+    "build.sh",
+    "component.json",
+    "docs",
+    "example",
+    "package.json",
+    "setver",
+    "spec",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CyberAgent/logcafe.js.git"
+  },
+  "homepage": "https://github.com/CyberAgent/logcafe.js.git",
+  "authors": [
+    "CyberAgent, Inc <npm@cyberagent.co.jp>",
+    "Kei Funagayama <funagayama_kei@cyberagent.co.jp>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+  }
+}
